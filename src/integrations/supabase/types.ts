@@ -14,7 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      gastos: {
+        Row: {
+          categoria: string
+          created_at: string
+          fecha: string
+          id_gasto: string
+          id_usuario: string
+          monto: number
+        }
+        Insert: {
+          categoria: string
+          created_at?: string
+          fecha: string
+          id_gasto?: string
+          id_usuario: string
+          monto: number
+        }
+        Update: {
+          categoria?: string
+          created_at?: string
+          fecha?: string
+          id_gasto?: string
+          id_usuario?: string
+          monto?: number
+        }
+        Relationships: []
+      }
+      presupuestos: {
+        Row: {
+          categoria: string
+          gasto_acumulado_mes: number
+          id: string
+          id_usuario: string
+          limite_presupuesto_mensual: number
+        }
+        Insert: {
+          categoria: string
+          gasto_acumulado_mes?: number
+          id?: string
+          id_usuario: string
+          limite_presupuesto_mensual: number
+        }
+        Update: {
+          categoria?: string
+          gasto_acumulado_mes?: number
+          id?: string
+          id_usuario?: string
+          limite_presupuesto_mensual?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
