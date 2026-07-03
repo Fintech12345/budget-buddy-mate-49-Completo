@@ -85,7 +85,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Registra tus gastos por categoría y controla tu presupuesto mensual en tiempo real.",
       },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Control de Finanzas" },
+      { property: "og:title", content: "Control de Finanzas - Categorización de Gastos" },
       {
         property: "og:description",
         content: "Categoriza tus gastos y monitorea tu presupuesto mensual.",
@@ -93,6 +93,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Control de Finanzas - Categorización de Gastos" },
+      { name: "description", content: "Budget Buddy is a mobile app for tracking expenses and managing budgets." },
+      { property: "og:description", content: "Budget Buddy is a mobile app for tracking expenses and managing budgets." },
+      { name: "twitter:description", content: "Budget Buddy is a mobile app for tracking expenses and managing budgets." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/39b48f57-38df-49d9-b092-a5ac2bbe457a/id-preview-8dc8eba4--f41c6469-bc15-4fc9-ac2f-f59cb2489e35.lovable.app-1783098043449.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/39b48f57-38df-49d9-b092-a5ac2bbe457a/id-preview-8dc8eba4--f41c6469-bc15-4fc9-ac2f-f59cb2489e35.lovable.app-1783098043449.png" },
     ],
     links: [
       {
